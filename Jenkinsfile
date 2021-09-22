@@ -5,7 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running script'
-                sh myscript.sh
+                sh '''
+                    sh myscript.sh
+                   '''
             }
         }
         stage('Test') {
