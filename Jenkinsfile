@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Running script'
+                sh mysript.sh
             }
         }
         stage('Test') {
