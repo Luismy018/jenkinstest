@@ -5,7 +5,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running script'
-                sh mysript.sh
+                sh ''' 
+                    sh myscript.sh
+                   '''
+
             }
         }
         stage('Test') {
